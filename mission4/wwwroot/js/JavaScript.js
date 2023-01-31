@@ -1,4 +1,5 @@
 ﻿$("#response").click(function () {
+    //pull each form value and assign to a variable
     var assignGrade = $("#aGrade").val() * 0.5;
     var groupProjGrade = $("#gGrade").val() * .1;
     var quizGrade = $("#qGrade").val() * .1;
@@ -6,12 +7,12 @@
     var finalExamGrade = $("#fGrade").val() * .1;
     var intexGrade = $("#iGrade").val() * .1;
 
-
+    //get final grade for project
     var finalGrade = (assignGrade) + (groupProjGrade) + (quizGrade) +
         (midtermGrade) + (finalExamGrade) + (intexGrade);
-
+    //initate var gradeLetter
     var gradeLetter = "f";
-
+    //if statement to update gradeletter to actual value
     if (finalGrade >= 94) {
         gradeLetter = "A";
     }
@@ -48,6 +49,7 @@
     else {
         gradeLetter = "E";
     };
+    //print to html
     $('#finalGrade').html("Wow you got a(n): " + gradeLetter + " in this class! Your final grade is: " + finalGrade.toFixed(2) + "%");
 
 })

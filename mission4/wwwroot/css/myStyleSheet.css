@@ -1,20 +1,14 @@
 ﻿﻿body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-
+/*differn custom css*/
 label {
-    font-size: 15px;
-    width: 150px;
+    font-size: 20px;
+    width: 250px;
     display: inline-block;
 }
 
-textarea {
-    font-size: 20px;
-}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.customDiv{
+    width: 25%
 }
