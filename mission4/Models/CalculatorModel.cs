@@ -4,6 +4,7 @@ namespace mission4.Models
 {
     public class CalculatorModel
     {
+        //Sets the variables and ranges for the variables
         [Required]
         [Range(0,100, ErrorMessage = "C'mon son your assignment grade must be bewtween 0 and 100")]
         public float Assignment { get; set; }
