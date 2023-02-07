@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\First\calculator.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\First\calculator.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\First\Calculator.cshtml" />
+  </ItemGroup>
+
 </Project>

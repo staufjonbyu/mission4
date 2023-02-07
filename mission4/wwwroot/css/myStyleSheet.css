@@ -12,3 +12,7 @@ label {
 .customDiv{
     width: 25%
 }
+
+nav {
+    margin: 0 auto;
+}
