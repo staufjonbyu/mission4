@@ -3,13 +3,14 @@
     var assignGrade = $("#aGrade").val() * 0.5;
     var groupProjGrade = $("#gGrade").val() * .1;
     var quizGrade = $("#qGrade").val() * .1;
-    var midtermGrade = $("#mGrade").val() * .1;
-    var finalExamGrade = $("#fGrade").val() * .1;
-    var intexGrade = $("#iGrade").val() * .1;
+    var midtermGrade = $("#mgrade").val() * .1;
+    var finalExamGrade = $("#fgrade").val().val() * .1;
+    var intexGrade = $("#igrade").val().val() * .1;
 
     //get final grade for project
     var finalGrade = (assignGrade) + (groupProjGrade) + (quizGrade) +
         (midtermGrade) + (finalExamGrade) + (intexGrade);
+    $('input[asp-for="FinalGrade"]').val(finalGrade.toFixed(2));
     //initate var gradeLetter
     var gradeLetter = "f";
     //if statement to update gradeletter to actual value
@@ -50,6 +51,6 @@
         gradeLetter = "E";
     };
     //print to html
-    $('#finalGrade').html("Wow you got a(n): " + gradeLetter + " in this class! Your final grade is: " + finalGrade.toFixed(2) + "%");
+    $alert(finalGrade)
 
 })
